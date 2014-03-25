@@ -9,6 +9,7 @@ TWILIO_ACCOUNT_SID = "ACxxxxxxxxxxxxx"
 TWILIO_AUTH_TOKEN = "yyyyyyyyyyyyyyyy"
 TWILIO_APP_SID = "APzzzzzzzzz"
 TWILIO_CALLER_ID = "+17778889999"
+DPLA_API_KEY = "abcdef1234567890"
 '''
 
 # Begin Heroku configuration - configured through environment variables.
