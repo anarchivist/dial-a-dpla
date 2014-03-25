@@ -51,6 +51,7 @@ def obj():
         item = results['docs'][index]
         stream = item['hasView']['@id']
         phrase = "You are about to listen to: " + item['sourceResource']['title'] + "."
+        phrase += "This item is from " + item['dataProvider'] + "."
         r.say(phrase)
         r.play(stream)
     return str(r)
