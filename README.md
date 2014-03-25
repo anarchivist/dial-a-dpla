@@ -7,7 +7,8 @@ recordings available from the [Digital Public Library of America](http://dp.la).
 To deploy on Heroku, you will need a Twilio account, a Twilio app, and a DPLA API key.
 
 * Create a new app on Heroku: `heroku create`
-* Add your settings: ```
+* Add your settings:
+```
 heroku config:set TWILIO_ACCOUNT_SID=YOUR_ACCOUNT_SID
 heroku config:set TWILIO_AUTH_TOKEN=YOUR_AUTH_TOKEN
 heroku config:set DPLA_API_KEY=YOUR_DPLA_API_KEY
