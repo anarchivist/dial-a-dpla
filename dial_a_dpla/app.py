@@ -49,8 +49,9 @@ def obj():
             upper_bound = results['count'] - 1
         index = random.randint(0, upper_bound)
         item = results['docs'][index]
-        stream = item['hasView']['@id']
-        phrase = "You are about to listen to: " + item['sourceResource']['title'] + "."
+        stream = item['object']
+        stream = stream.replace("_tb.mp3", ".mp3")
+        phrase = "You are about to listen to: " + item['sourceResource']['title'] + ". "
         phrase += "This item is from " + item['dataProvider'] + "."
         r.say(phrase)
         r.play(stream)
